@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const book=new Promise((resolve,reject)=>{
+            let bookingsuccess=0
+            if(bookingsuccess){
+                resolve()
+            }
+            else{
+                reject()
+            }
+        })
+        
+        book.then(success)
+            .catch(failure)
+        function success(){
+            console.log("book is ordered")
+        }    
+        function failure(){
+            console.log("I am unable to order")
+        }
+    </script>
+</body>
+</html>
